@@ -9,6 +9,7 @@ namespace persona_ciudad.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public virtual DbSet<Ubicacion> Ubicaciones {get;set;}
+        public virtual DbSet<Categoria> Categorias {get;set;}
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
